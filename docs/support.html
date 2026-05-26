@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート｜KML一発マップ</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #f8f9fa;
+    }
+    header {
+      background: #1a8c4e;
+      color: #fff;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; }
+    header p  { font-size: 0.9rem; margin-top: 6px; opacity: 0.85; }
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a8c4e;
+      border-left: 4px solid #1a8c4e;
+      padding-left: 10px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 20px 0 8px;
+      color: #1a1a1a;
+    }
+    h3:first-child { margin-top: 0; }
+    p { margin-bottom: 10px; color: #333; }
+    ol, ul { padding-left: 22px; margin-bottom: 10px; }
+    ol li, ul li { margin-bottom: 6px; color: #333; }
+    a { color: #1a8c4e; }
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #1a8c4e;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { display: block; font-size: 0.95rem; margin-bottom: 2px; }
+    .step-body span { font-size: 0.88rem; color: #555; }
+    .faq-q {
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+    .faq-q::before { content: "Q. "; color: #1a8c4e; }
+    .faq-a { font-size: 0.93rem; color: #444; margin-bottom: 20px; padding-left: 20px; }
+    .faq-a::before { content: "A. "; font-weight: 700; color: #555; }
+    .contact-box {
+      background: #e8f5e9;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-align: center;
+    }
+    .contact-box p { color: #2e7d52; margin-bottom: 10px; }
+    .contact-box a {
+      display: inline-block;
+      background: #1a8c4e;
+      color: #fff;
+      padding: 10px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>サポート</h1>
+  <p>KML一発マップ</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>アプリについて</h2>
+    <p>
+      「KML一発マップ」は、CSV ファイルから KML ファイルを生成し、
+      Google マイマップへのインポートをサポートするアプリです。
+      すべての処理はお使いの端末内で完結します。
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>基本的な使い方</h2>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>CSV ファイルを用意する</strong>
+        <span>緯度・経度の列を含む CSV ファイルを端末に保存しておきます。</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>「CSV から KML を作る」をタップ</strong>
+        <span>ホーム画面から CSV ファイルを選択します。</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>列を割り当てる</strong>
+        <span>名称・説明・緯度・経度に対応する CSV の列を選択します。</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <strong>KML を生成・共有</strong>
+        <span>内容を確認して KML ファイルを生成し、共有ボタンで書き出します。</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <strong>Google マイマップへインポート</strong>
+        <span>ガイド画面の手順に従って、Google マイマップに KML をインポートします。</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>CSV ファイルの形式</h2>
+    <p>以下の要件を満たした CSV ファイルが対応しています。</p>
+    <ul>
+      <li>1 行目をヘッダー行として使用（省略可）</li>
+      <li>緯度・経度を数値で格納した列が必須（例：35.6895、139.6917）</li>
+      <li>文字コード：UTF-8 または Shift_JIS</li>
+      <li>改行コード：CR+LF / LF / CR すべて対応</li>
+    </ul>
+    <p>名称列・説明列は任意です。指定しない場合は「地点1」「地点2」…と自動採番されます。</p>
+  </div>
+
+  <div class="card">
+    <h2>よくある質問</h2>
+
+    <p class="faq-q">CSV を読み込んでも文字が化ける</p>
+    <p class="faq-a">
+      Shift_JIS の CSV を Excel で保存した場合に発生することがあります。
+      CSV を「UTF-8（BOM なし）」で保存し直すと解決する場合があります。
+      Excel では「名前を付けて保存」→「CSV UTF-8（コンマ区切り）」を選択してください。
+    </p>
+
+    <p class="faq-q">緯度・経度の列が候補に表示されない</p>
+    <p class="faq-a">
+      数値として認識できない値（全角数字・スペース・単位付きなど）が入っていると除外される場合があります。
+      列内のデータが純粋な数値（例：35.6895）になっているか確認してください。
+    </p>
+
+    <p class="faq-q">KMZ ファイルを開けない</p>
+    <p class="faq-a">
+      KMZ は ZIP 形式で圧縮された KML ファイルです。
+      正常な KMZ ファイルであれば「KML / KMZ を確認する」から開けます。
+      ファイルが壊れているか、KML 以外のファイルのみが格納されている場合はエラーになります。
+    </p>
+
+    <p class="faq-q">Google マイマップへのインポートはどうすればいい？</p>
+    <p class="faq-a">
+      アプリ内の「Google マイマップの使い方」ガイドにステップごとの手順を掲載しています。
+      KML を共有後、Google マイマップアプリまたはブラウザ版でインポートしてください。
+    </p>
+
+    <p class="faq-q">地点数に上限はある？</p>
+    <p class="faq-a">
+      アプリ自体に制限はありませんが、Google マイマップ側で 1 レイヤーあたり 2,000 地点・
+      1 マップあたり 10,000 地点の制限があります（2026 年現在）。
+    </p>
+
+    <p class="faq-q">データはサーバーに送信される？</p>
+    <p class="faq-a">
+      送信されません。すべての処理はお使いの端末内で完結します。
+      詳しくはプライバシーポリシーをご参照ください。
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p>
+        ご不明な点・不具合のご報告・ご要望は<br>
+        メールにてお気軽にご連絡ください。
+      </p>
+      <a href="mailto:takezo@e-tonya.org">takezo@e-tonya.org</a>
+    </div>
+    <p style="font-size:0.85rem; color:#888; margin-top:14px; text-align:center;">
+      お問い合わせの際は、お使いの端末の種類・OS バージョン・アプリのバージョンを<br>
+      できるだけ添えていただけると対応がスムーズです。
+    </p>
+  </div>
+
+  <div class="card" style="text-align:center; padding: 20px 32px;">
+    <a href="privacy.html" style="color:#1a8c4e; font-size:0.9rem;">プライバシーポリシー</a>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 KML一発マップ. All rights reserved.
+</footer>
+
+</body>
+</html>
